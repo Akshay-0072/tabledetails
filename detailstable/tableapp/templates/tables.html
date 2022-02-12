@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details Table</title>
+</head>
+<body> </br>
+<h1>Employees Details Table</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Email</th>
+      <th scope="col">Salary</th>
+      <th scope="col">Number</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in Employeename %}
+    <tr>
+      <th scope="row">{{ forloop.counter }}</th>
+      <td>{{EmployeeName.empname}}</td>
+      <td>{{EmployeeName.address}}</td>
+      <td>{{EmployeeName.email}}</td>
+      <td>{{EmployeeName.salary}}</td>
+      <td>{{EmployeeName.phone}}</td>
+    </tr>
+  {% endfor %}
+    </tbody>
+</table> </br>
+<h2> Teacher's Details</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Email</th>
+      <th scope="col">Salary</th>
+      <th scope="col">Number</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in Employeename %}
+    <tr>
+      <th scope="row">{{ forloop.counter }}</th>
+      <td>{{TeacherDetails.teach_name}}</td>
+      <td>{{TeacherDetails.teach_address}}</td>
+      <td>{{TeacherDetails.teach_email}}</td>
+      <td>{{TeacherDetails.teach_salary}}</td>
+      <td>{{TeacherDetails.teach_phone}}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>
