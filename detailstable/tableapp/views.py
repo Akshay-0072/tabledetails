@@ -26,6 +26,6 @@ def teachDetails(request):
     return render(request, 'teacher.html')
 
 def table(request):
-    emp = EmployeesDetails.objects.all()
-    teach = TeacherDetails.objects.all()
+    # emp = EmployeesDetails.objects.all()
+    # teach = TeacherDetails.objects.all()
     return render(request, 'tables.html')
